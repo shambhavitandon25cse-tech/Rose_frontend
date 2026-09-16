@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rosé | About Us</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="about.css">
+</head>
+<body>
+	<header class="topbar">
+		<a class="logo" href="Rose.html" aria-label="Rosé home">
+			<img class="seal-img" src="rose-seal-transparent.png" alt="Rosé">
+			<span class="logo-text">Rosé</span>
+		</a>
+
+		<nav class="topnav" aria-label="Main navigation">
+			<a href="Rose.html">Home</a>
+			<a href="products.html">Products</a>
+			<a class="active" href="about.html" aria-current="page">About Us</a>
+			<a href="#contact">Contact Us</a>
+		</nav>
+
+		<a class="about-started" href="Rose.html">Get Started</a>
+	</header>
+
+	<main>
+		<section class="about-intro" aria-labelledby="about-title">
+			<p class="kicker">ABOUT ROSÉ</p>
+			<h1 id="about-title">Beauty choices, made <i>clear.</i></h1>
+			<p class="intro-copy">Rosé turns real reviews into clear insights, helping you choose products that fit you.</p>
+		</section>
+
+		<section class="content-band" aria-labelledby="what-we-do-title">
+			<div class="content-wrap two-column">
+				<div>
+					<p class="kicker">WHAT WE DO</p>
+					<h2 id="what-we-do-title">Product insight, without the hype.</h2>
+				</div>
+				<div>
+					<p class="body-p">We analyze skincare, beauty, and personal care products through real user experiences.</p>
+					<ul class="dot-list">
+						<li>Analyze real user reviews</li>
+						<li>Spot patterns across skin types and concerns</li>
+						<li>Focus on performance, not popularity</li>
+					</ul>
+					<p class="highlight">Our goal is informed decisions, not impulse purchases.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section" id="contact" aria-labelledby="contact-title">
+			<div class="content-wrap contact-layout">
+				<div>
+					<p class="kicker">CONTACT US</p>
+					<h2 id="contact-title">Have an idea?</h2>
+					<p class="body-p">Send us a note. We’d love to hear from you.</p>
+				</div>
+				<form class="contact-form" action="mailto:hello@rose-skincare.com" method="post" enctype="text/plain">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" placeholder="Your name" required>
+
+					<label for="email">Email address</label>
+					<input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" placeholder="Tell us what you think" required></textarea>
+
+					<button type="submit">Send Message</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-brand">
+			<img src="rose-seal-transparent.png" alt="Rosé">
+			<span>Rosé</span>
+		</div>
+		<p>Skincare choices, made personal.<br><small>Powered by real people. Real data.</small></p>
+		<a href="mailto:hello@rose-skincare.com">hello@rose-skincare.com</a>
+	</footer>
+</body>
+</html>
