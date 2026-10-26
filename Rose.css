@@ -254,5 +254,31 @@ button {
     .login {
         width: 100%;
         max-width: 400px;
+        padding: 48px 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left {
+        min-height: 460px;
+        padding: 24px 22px 36px;
+        background-position: center, 58% bottom;
+    }
+
+    .tagline {
+        margin-top: 54px;
+    }
+
+    h1 {
+        font-size: clamp(32px, 9vw, 42px);
+    }
+
+    .right {
+        min-height: auto;
+        padding: 24px 0;
+    }
+
+    .login {
+        padding: 36px 24px;
     }
 }

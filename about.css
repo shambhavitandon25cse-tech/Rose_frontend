@@ -291,11 +291,16 @@ h2 {
 
 @media (max-width: 700px) {
     .topbar {
-        padding: 17px 24px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px 20px;
+        padding: 17px 20px;
     }
 
-    .about-started {
-        display: none;
+    .topnav {
+        grid-column: 1 / -1;
+        flex-wrap: wrap;
+        gap: 12px 22px;
     }
 
     .about-intro,
@@ -323,5 +328,20 @@ h2 {
         align-items: flex-start;
         flex-direction: column;
         padding: 28px 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .about-started {
+        padding: 10px 13px;
+        font-size: 10px;
+    }
+
+    .topnav {
+        gap: 10px 16px;
+    }
+
+    .topnav a {
+        font-size: 12px;
     }
 }
